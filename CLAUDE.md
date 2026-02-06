@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repo Is
 
-A collection of reusable utilities for Claude Code: hooks, custom slash commands, MCP server configs, and helper scripts. Users clone this repo and copy or symlink individual utilities into their own `~/.claude/` setup.
+A collection of reusable utilities for Claude Code: hooks, skills (custom slash commands), MCP server configs, and helper scripts. Users clone this repo and copy or symlink individual utilities into their own `~/.claude/` setup.
 
 ## Repository Layout
 
 - `hooks/` — Claude Code hooks (pre/post tool-call scripts, triggered by `settings.json` hook config)
-- `commands/` — Custom slash-command prompt files (`.md`)
+- `skills/` — Custom slash-command prompt files (`.md`), invoked via `/skill-name`
 - `mcp/` — MCP server configurations and related scripts
 - `scripts/` — General-purpose helper scripts
 - Root-level scripts (`startup-quote.sh`, `startup-quote.py`) — Standalone utilities meant to be copied into `~/.claude/`

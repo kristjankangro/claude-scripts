@@ -2,14 +2,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A collection of utilities for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — hooks, custom slash commands, MCP configs, and helper scripts.
+A collection of utilities for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — hooks, skills (custom slash commands), MCP configs, and helper scripts.
 
 ## Folder Structure
 
 | Directory    | Purpose                                         |
 | ------------ | ----------------------------------------------- |
 | `hooks/`     | Claude Code hooks (pre/post tool-call scripts)  |
-| `commands/`  | Custom slash-command prompts (`.md` files)       |
+| `skills/`    | Custom slash-command prompts (`.md` files)       |
 | `mcp/`       | MCP server configs and related scripts           |
 | `scripts/`   | General-purpose helper scripts                   |
 
