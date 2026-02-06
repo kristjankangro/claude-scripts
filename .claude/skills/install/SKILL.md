@@ -9,7 +9,7 @@ Install claude-scripts utilities into `~/.claude/`.
 
 ## Startup Quote Hook
 
-1. Copy `startup-quote.py` from this repo into `~/.claude/startup-quote.py`.
+1. Copy `.claude/startup-quote.py` from this repo into `~/.claude/startup-quote.py`.
 2. Read `~/.claude/settings.json` (create it with `{}` if it doesn't exist).
 3. Add a `SessionStart` hook entry under `hooks` that runs: `python3 ~/.claude/startup-quote.py`
    - If `hooks.SessionStart` already contains a command referencing `startup-quote`, skip and tell the user it's already installed.
@@ -28,7 +28,7 @@ Install claude-scripts utilities into `~/.claude/`.
 
 ## Status Line
 
-4. Copy `statusline.py` from this repo into `~/.claude/statusline.py`.
+4. Copy `.claude/statusline.py` from this repo into `~/.claude/statusline.py`.
 5. Set the `statusLine` entry in `settings.json`:
    - If `statusLine` already references `statusline.py`, skip and tell the user it's already installed.
    - Otherwise set:
