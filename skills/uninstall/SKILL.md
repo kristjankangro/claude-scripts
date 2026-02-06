@@ -1,17 +1,18 @@
 ---
 name: uninstall
-description: Remove the startup quote hook from the user's Claude Code setup
+description: Remove startup quote hook and statusline from the user's Claude Code setup
 disable-model-invocation: true
 allowed-tools: Read, Write, Bash(rm *)
 ---
 
-Remove the startup quote hook from `~/.claude/`.
+Remove claude-scripts utilities from `~/.claude/`.
 
 1. Read `~/.claude/settings.json`.
 2. Remove any `SessionStart` hook entry whose command references `startup-quote`.
    - If the `SessionStart` array becomes empty, remove the `SessionStart` key.
    - If the `hooks` object becomes empty, remove the `hooks` key.
-   - Preserve all other settings.
-3. Write the updated `settings.json` back.
-4. Delete `~/.claude/startup-quote.py` if it exists.
-5. Tell the user the startup quote hook has been removed.
+3. Remove the `statusLine` entry if it references `statusline.py`.
+4. Preserve all other settings.
+5. Write the updated `settings.json` back.
+6. Delete `~/.claude/startup-quote.py` and `~/.claude/statusline.py` if they exist.
+7. Tell the user what was removed.
