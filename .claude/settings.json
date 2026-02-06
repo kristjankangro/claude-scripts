@@ -22,7 +22,7 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "python3 C:\\Users\\KristjanKangro\\RiderProjects\\Palk\\.claude\\statusline.py"
+    "command": "python3 C:\\Users\\kris\\.claude\\statusline.py"
   },
   "enabledPlugins": {
     "pr-review-toolkit@claude-code-plugins": false,
@@ -36,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ~/.claude/startup-quote.sh"
+            "command": "bash c:\\Users\\kris\\.claude\\startup-quote.sh"
           }
         ]
       }
