@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "WebFetch",
+      "Grep",
+      "Glob",
+      "LS",
+      "MultiEdit",
+      "NotebookRead",
+      "NotebookEdit",
+      "TodoRead",
+      "TodoWrite",
+      "WebSearch",
+      "SlashCommand",
+      "Skill"
+    ]
+  },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "python3 C:\\Users\\KristjanKangro\\RiderProjects\\Palk\\.claude\\statusline.py"
+  },
+  "enabledPlugins": {
+    "pr-review-toolkit@claude-code-plugins": false,
+    "webapp-testing@awesome-claude-skills": false
+  },
+  "autoUpdatesChannel": "latest",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/startup-quote.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
