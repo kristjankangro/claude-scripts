@@ -1,6 +1,11 @@
-Install the startup quote hook into the user's Claude Code setup.
+---
+name: install
+description: Install the startup quote hook into the user's Claude Code setup
+disable-model-invocation: true
+allowed-tools: Read, Write, Bash(cp *), Bash(mkdir *)
+---
 
-Steps:
+Install the startup quote hook into `~/.claude/`.
 
 1. Copy `startup-quote.py` from this repo into `~/.claude/startup-quote.py`.
 2. Read `~/.claude/settings.json` (create it with `{}` if it doesn't exist).

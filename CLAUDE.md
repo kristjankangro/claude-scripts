@@ -9,7 +9,7 @@ A collection of reusable utilities for Claude Code: hooks, skills (custom slash 
 ## Repository Layout
 
 - `hooks/` — Claude Code hooks (pre/post tool-call scripts, triggered by `settings.json` hook config)
-- `skills/` — Custom slash-command prompt files (`.md`), invoked via `/skill-name`
+- `skills/` — Each skill is a directory containing a `SKILL.md` with YAML frontmatter, invoked via `/skill-name`
 - `mcp/` — MCP server configurations and related scripts
 - `scripts/` — General-purpose helper scripts
 - Root-level scripts (`startup-quote.sh`, `startup-quote.py`) — Standalone utilities meant to be copied into `~/.claude/`
@@ -20,6 +20,7 @@ Scripts in this repo are not run directly from this working directory. They are 
 
 ## Conventions
 
+- **Skills** follow the Claude Code skills format: `skills/<name>/SKILL.md` with YAML frontmatter (`name`, `description`, `disable-model-invocation`, `allowed-tools`, `argument-hint`).
 - Hooks and scripts should include a comment header documenting: what hook event they target, and the `settings.json` snippet needed to install them.
 - Both bash (`.sh`) and Python (`.py`) variants may exist for cross-platform support (see `startup-quote.sh` / `startup-quote.py`).
 - The `settings.json` in the repo root is a reference example, not meant to be used as-is (it contains machine-specific paths).
