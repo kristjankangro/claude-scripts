@@ -45,8 +45,15 @@ Install claude-scripts utilities into `~/.claude/`.
      }
      ```
 
+## CLAUDE.md
+
+9. Read `<CLAUDE_HOME>/CLAUDE.md` (create it if it doesn't exist).
+10. Ensure it contains the line: `When a SessionStart hook provides a quote in the system context, always display it to the user at the beginning of the conversation.`
+    - If the line is already present, skip.
+    - Otherwise append it to the file.
+
 ## Finalize
 
-9. Preserve all existing settings — only merge in the new keys.
-10. Write the updated `settings.json` back.
-11. Tell the user what was installed and that new Claude Code sessions will show a random quote on startup and a context usage statusline.
+11. Preserve all existing settings — only merge in the new keys.
+12. Write the updated `settings.json` back.
+13. Tell the user what was installed and that new Claude Code sessions will show a random quote on startup and a context usage statusline.
